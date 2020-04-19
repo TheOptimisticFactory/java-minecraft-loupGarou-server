@@ -1,0 +1,4 @@
+permissions:
+  loupgarou.admin:
+    description: May be useful if/when https://github.com/leomelki/LoupGarou/pull/19 gets merged
+    default: op

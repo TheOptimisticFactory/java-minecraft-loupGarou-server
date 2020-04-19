@@ -1,0 +1,17 @@
+# FOLDERS
+logs/
+plugins/bStats/
+plugins/LoupGarou builds - Shortcut.lnk
+plugins/PluginMetrics/
+
+# MAPS
+world/
+world_nether/
+world_the_end/
+
+# FILES
+banned-ips.json
+banned-players.json
+help.yml
+ops.json
+usercache.json
