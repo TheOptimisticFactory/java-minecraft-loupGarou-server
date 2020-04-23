@@ -4,8 +4,16 @@ plugins/bStats/
 plugins/LoupGarou builds - Shortcut.lnk
 plugins/PluginMetrics/
 
-# MAPS
-world/
+# MAIN MAP
+world/advancements/
+world/data/raids.dat
+world/level.dat_old
+world/playerdata/
+world/poi/
+world/session.lock
+world/stats/
+
+# OTHER DIMENSIONS
 world_nether/
 world_the_end/
 
