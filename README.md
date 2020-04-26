@@ -34,7 +34,8 @@
 
 #### 02) Ability to set nickanmes to players
 
-- https://github.com/leomelki/LoupGarou/pull/40 (Author: [Nicooow](https://github.com/Nicooow)). - Tweaked the PR with an [additional commit (9cbb739)](https://github.com/TheOptimisticFactory/LoupGarou/commit/9cbb73935532cacab8787cc4586a64e42b65958e) to
+- https://github.com/leomelki/LoupGarou/pull/40 (Author: [Nicooow](https://github.com/Nicooow)).
+- Tweaked the PR with an [additional commit (9cbb739)](https://github.com/TheOptimisticFactory/LoupGarou/commit/9cbb73935532cacab8787cc4586a64e42b65958e) to:
   + support nickname containing spaces
   + color the nicknames
 
@@ -44,11 +45,37 @@
 
 #### 03) GUI to configure roles and start game
 
-- https://github.com/leomelki/LoupGarou/pull/19 (Author: [Commantary](https://github.com/Commantary)). - Tweaked the PR with an [additional commit (7df0439)](https://github.com/TheOptimisticFactory/LoupGarou/commit/7df04392ecb443d42207b859fcbbf4188e8080ae) to
+- https://github.com/leomelki/LoupGarou/pull/19 (Author: [Commantary](https://github.com/Commantary)).
+- Tweaked the PR with an [additional commit (7df0439)](https://github.com/TheOptimisticFactory/LoupGarou/commit/7df04392ecb443d42207b859fcbbf4188e8080ae) to:
   + fix compilation issues
 
   ![image](https://user-images.githubusercontent.com/2607260/80097236-41ca6700-856b-11ea-978c-dd658ad09c67.png)
 
-#### 04) Revamped scoreboard to avoid useless scoring
+#### 04) Highlight of the % of votes on a given player
 
-- TODO: showcase it
+- https://github.com/leomelki/LoupGarou/pull/43 (Author: [TheOptimisticFactory](https://github.com/TheOptimisticFactory))
+
+  ![image](https://user-images.githubusercontent.com/2607260/79676799-f706c300-81e9-11ea-86cd-0c9cd98be0b3.png)
+
+#### 05) Server logs when a player dies or gets resurrected
+
+- https://github.com/leomelki/LoupGarou/pull/47 (Author: [TheOptimisticFactory](https://github.com/TheOptimisticFactory))
+
+  ![image](https://user-images.githubusercontent.com/2607260/80264401-56564e80-8694-11ea-9f28-89a425b4d59b.png)
+
+#### 06) Revamped scoreboard to avoid useless scoring
+
+- Needs testing before the PR gets created. (Author: [TheOptimisticFactory](https://github.com/TheOptimisticFactory))
+  + Added highlight of the total number of players remaining.
+  + Added support of plural names in the scoreboard.
+  + Rewritten logic to avoid instantiating 15 instances when 1 is sufficient.
+
+  ![javaw_3n08F7Wy4V](https://user-images.githubusercontent.com/2607260/80318956-faafd080-880d-11ea-8a82-5d7a63f66330.png)
+
+#### 07) Persisted round results for postgame analytics
+
+- Needs testing before the PR gets created. (Author: [TheOptimisticFactory](https://github.com/TheOptimisticFactory))
+- Village composition and victory type is saved in `stats.csv` to enable postgame analytics
+
+  ![Code_FCvEXfwuZR](https://user-images.githubusercontent.com/2607260/80318997-54b09600-880e-11ea-9256-a29da3f42175.png)
+
