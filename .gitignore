@@ -23,3 +23,7 @@ banned-players.json
 help.yml
 ops.json
 usercache.json
+
+# PLUGIN FILES
+plugins/LoupGarou/stats.csv
+plugins/ProtocolLib/lastupdate
