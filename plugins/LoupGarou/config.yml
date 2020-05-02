@@ -45,10 +45,10 @@ distributionRandom:
     LoupGarouBlanc: 40
     LoupGarouNoir: 15
   neutralWeights:
-    Assassin: 33
-    Bouffon: 33
-    Pyromane: 33
-    Vampire: 0
+    Assassin: 50
+    Bouffon: 75
+    Pyromane: 50
+    Vampire: 25
 
 # ======================================================================================================== #
 #                                        ROLE DISTRIBUTION => FIXED                                        #
@@ -84,37 +84,6 @@ distributionFixed:
   MontreurDOurs: 0
   Vampire: 0
   ChasseurDeVampire: 0
-
-  role:
-    PetiteFille: 0
-    LoupGarou: 1
-    Corbeau: 0
-    LoupGarouBlanc: 0
-    Voyante: 0
-    Assassin: 1
-    Dictateur: 0
-    LoupGarouNoir: 0
-    ChaperonRouge: 0
-    Faucheur: 0
-    EnfantSauvage: 0
-    Cupidon: 0
-    Chasseur: 1
-    Bouffon: 0
-    Detective: 0
-    GrandMechantLoup: 0
-    Survivant: 0
-    Garde: 0
-    Villageois: 0
-    Ange: 0
-    Medium: 0
-    ChienLoup: 0
-    Pyromane: 0
-    Pirate: 0
-    Pretre: 0
-    Sorciere: 0
-    MontreurDOurs: 0
-    Vampire: 0
-    ChasseurDeVampire: 0
 
 # =========================================================================================== #
 #                                        STARTING MEMES                                       #
