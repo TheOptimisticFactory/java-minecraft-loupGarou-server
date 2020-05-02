@@ -1,78 +1,73 @@
-spawns:
-- - -175.0
-  - 23.5
-  - -152.0
-  - 0.3555727005004883
-  - 90.0
-- - -178.0
-  - 23.5
-  - -151.0
-  - -36.692230224609375
-  - 90.0
-- - -181.0
-  - 23.5
-  - -148.0
-  - -89.49008178710938
-  - 88.94998931884766
-- - -182.0
-  - 23.5
-  - -145.0
-  - -89.49008178710938
-  - 88.94998931884766
-- - -181.0
-  - 23.5
-  - -142.0
-  - -134.78823852539062
-  - 86.24996185302734
-- - -178.0
-  - 23.5
-  - -139.0
-  - -177.54168701171875
-  - 85.94995880126953
-- - -175.0
-  - 23.5
-  - -138.0
-  - -177.54168701171875
-  - 85.94995880126953
-- - -172.0
-  - 23.5
-  - -139.0
-  - -227.9429931640625
-  - 90.0
-- - -169.0
-  - 23.5
-  - -142.0
-  - -269.34051513671875
-  - 89.8499984741211
-- - -168.0
-  - 23.5
-  - -145.0
-  - -272.64093017578125
-  - 85.94995880126953
-- - -169.0
-  - 23.5
-  - -148.0
-  - -315.39581298828125
-  - 84.74994659423828
-- - -172.0
-  - 23.5
-  - -151.0
-  - -327.8436279296875
-  - 88.79998779296875
-role:
+# ======================================================================================== #
+#                                        SCOREBOARD                                        #
+# ======================================================================================== #
+
+# "showScoreboard" can be one of [true,false]
+showScoreboard: true
+
+# "showScoreboard" can be one of [random,fixed]
+roleDistribution: random
+
+# ========================================================================================================= #
+#                                        ROLE DISTRIBUTION => RANDOM                                        #
+# ========================================================================================================= #
+
+distributionRandom:
+  amountOfPlayers: 3
+  categoryWeights:
+    villagerRoles: 65
+    evilRoles: 35
+    neutralRoles: 10
+  villagerWeights:
+    Ange: 10
+    ChaperonRouge: 33
+    Chasseur: 50
+    ChasseurDeVampire: 0
+    Corbeau: 45
+    Cupidon: 27
+    Dictateur: 100
+    EnfantSauvage: 100
+    Faucheur: 100
+    Garde: 100
+    Medium: 100
+    MontreurDOurs: 100
+    PetiteFille: 100
+    Pirate: 100
+    Pretre: 100
+    Sorciere: 100
+    Survivant: 100
+    Villageois: 0
+    Voyante: 100
+  evilWeigths:
+    ChienLoup: 33
+    GrandMechantLoup: 33
+    LoupGarou: 100
+    LoupGarouBlanc: 40
+    LoupGarouNoir: 15
+  neutralWeights:
+    Assassin: 33
+    Bouffon: 33
+    Pyromane: 33
+    Vampire: 0
+
+# ======================================================================================================== #
+#                                        ROLE DISTRIBUTION => FIXED                                        #
+# ======================================================================================================== #
+
+distributionFixed:
   PetiteFille: 0
   LoupGarou: 1
   Corbeau: 0
   LoupGarouBlanc: 0
   Voyante: 0
-  Assassin: 0
+  Assassin: 1
   Dictateur: 0
   LoupGarouNoir: 0
   ChaperonRouge: 0
   Faucheur: 0
   EnfantSauvage: 0
   Cupidon: 0
-  Chasseur: 0
+  Chasseur: 1
   Bouffon: 0
   Detective: 0
   GrandMechantLoup: 0
@@ -89,33 +84,156 @@ role:
   MontreurDOurs: 0
   Vampire: 0
   ChasseurDeVampire: 0
+
+  role:
+    PetiteFille: 0
+    LoupGarou: 1
+    Corbeau: 0
+    LoupGarouBlanc: 0
+    Voyante: 0
+    Assassin: 1
+    Dictateur: 0
+    LoupGarouNoir: 0
+    ChaperonRouge: 0
+    Faucheur: 0
+    EnfantSauvage: 0
+    Cupidon: 0
+    Chasseur: 1
+    Bouffon: 0
+    Detective: 0
+    GrandMechantLoup: 0
+    Survivant: 0
+    Garde: 0
+    Villageois: 0
+    Ange: 0
+    Medium: 0
+    ChienLoup: 0
+    Pyromane: 0
+    Pirate: 0
+    Pretre: 0
+    Sorciere: 0
+    MontreurDOurs: 0
+    Vampire: 0
+    ChasseurDeVampire: 0
+
+# =========================================================================================== #
+#                                        STARTING MEMES                                       #
+# =========================================================================================== #
+
 startingMemes:
-- Appuyez sur §bALT+F4§f pour débloquer un skin unique. Cette offre expirera dans 20 minutes.
+- Appuyez sur §bALT+F4§f pour débloquer un skin unique. Cette offre expirera dans
+  20 minutes.
 - Appuyez sur §bF§f pour présenter vos condoléances
 - Brossez-vous les dents après chaque repas. Surtout si vous êtes un §bloup-garou§f.
-- Connaissez-vous le jeu gratuit §bPath Of Exile§f ? C'est objectivement le meilleur jeu coopératif existant sur Terre.
-- Contrairement aux idées reçues, même vos §bmeilleurs amis§f n'auront aucun scrupule à vous immoler ou vous jetter sous un bus à la première occasion.
+- Connaissez-vous le jeu gratuit §bPath Of Exile§f ? C'est objectivement le meilleur
+  jeu coopératif existant sur Terre.
+- Contrairement aux idées reçues, même vos §bmeilleurs amis§f n'auront aucun scrupule
+  à vous immoler ou vous jetter sous un bus à la première occasion.
 - J'ai vu, je sais qui c'est, mais je ne dirai rien. Surtout pas à vous.
-- La §bsorcière§f ne vous sauvera pas : elle ne vous aime pas et ne vous a jamais aimé.
-- La sauce barbecue est la meilleure pour vos grillades. Ce message est sponsorisé par votre §bpyromane§f local.
-- Les loup-garous tue toujours les mecs §ben face d'eux§f. Sauf quand ils ne le font pas.
+- La §bsorcière§f ne vous sauvera pas: elle ne vous aime pas et ne vous a jamais aimé.
+- La sauce barbecue est la meilleure pour vos grillades. Ce message est sponsorisé
+  par votre §bpyromane§f local.
+- Les loup-garous tue toujours les mecs §ben face d'eux§f. Sauf quand ils ne le font
+  pas.
 - Mangez 5 fruits et légumes par jour. Si vous êtes §bloup-garou§f, ajoutez un villagois.
-- Ne dévoilez pas votre innocence trop vite, vous risqueriez de vos faire §bdévorer très fort§f.
+- Ne dévoilez pas votre innocence trop vite, vous risqueriez de vos faire §bdévorer
+  très fort§f.
 - Pour déconner, le serveur tuera automatiquement la §b1ère personne qui votera§f.
-- Quelle différence y a t il entre le §bbon et le mauvais chasseur§f ? Bon y faut expliquer tu vois y'a le §bmauvais chasseur§f, y voit un truc qui bouge y tire, y tire. Le §bbon chasseur§f y voit un truc y tire mais c'est un bon chasseur. Voilà c'est ça on ne peut pas les confondre.
-- Si vous mourrez en tant que §bchasseur§f, un §b360 no-scope§f est la plus belle façon d'éliminer quelqu'un qui vous ne pouvez pas piffer.
-- Un bon §bfaucheur§f est un faucheur mort. Lui, et la moitié de votre village en un coup.
+- Quelle différence y a t il entre le §bbon et le mauvais chasseur§f ? Bon y faut
+  expliquer tu vois y'a le §bmauvais chasseur§f, y voit un truc qui bouge y tire,
+  y tire. Le §bbon chasseur§f y voit un truc y tire mais c'est un bon chasseur. Voilà
+  c'est ça on ne peut pas les confondre.
+- Si vous mourrez en tant que §bchasseur§f, un §b360 no-scope§f est la plus belle
+  façon d'éliminer quelqu'un qui vous ne pouvez pas piffer.
+- Un bon §bfaucheur§f est un faucheur mort. Lui, et la moitié de votre village en
+  un coup.
 - Visitez §bpathofexile.com§f, vous ne remercierez plus tard.
-- Vous aussi pouvez avoir une vie aussi trépidente que §bl'Inspecteur Derrick§f en endossant le rôle du §bdétective§f.
+- Vous aussi pouvez avoir une vie aussi trépidente que §bl'Inspecteur Derrick§f en
+  endossant le rôle du §bdétective§f.
 - Vous risquez de finir en §bsandwich§f pour loup-garou. Pas très vegan tout ça..
-- Ne faites jamais confiance à §bDidou§f, vous pourriez le regretter (elle est l'incarnation de la fourberie)
+- Ne faites jamais confiance à §bDidou§f, vous pourriez le regretter (elle est l'incarnation
+  de la fourberie)
 - §bRomainG (AKA Frypan)§f vous serai gré de ne pas le tuer au 1er tour, merci d'avance.
 - §bDalmo§f président ! (Avant qu'il finisse au cimetière..)
 - Si §bJypee§f est maire, n'oubliez pas de tuer §bDalmo§f au premier tour.
 - Si vous tuez §bJubee§f, vous assassinez 2 personnes d'un coup !
-- §bGuillaum-Sora§f-t-il faire le bon choix ? On en doute.. ('saura-t-il', huehuehue) - BastouTM, 19/04/2020.
+- §bGuillaum-Sora§f-t-il faire le bon choix ? On en doute.. ('saura-t-il', huehuehue)
+  - BastouTM, 19/04/2020.
 - §bJbosaure§f est un cactus.
-- S'exclamer §b'MHHHHHHHM'§f sur Discord pendant un moment de silence quand vous hésitez entre qui dévorer la nuit à votre couverture. (Technique communément appelée '§bFaire une JB'§f).
-- Assassiner/dévorer §bRomainG (AKA Frypan)§f cause par effet papillon la mort de milliers de bébés chats à l'autre bout du monde. Vous ne voudriez pas avoir ça sur la conscience quand même. Espèce de monstre!
+- S'exclamer §b'MHHHHHHHM'§f sur Discord pendant un moment de silence quand vous hésitez
+  entre qui dévorer la nuit à votre couverture. (Technique communément appelée '§bFaire
+  une JB'§f).
+- Assassiner/dévorer §bRomainG (AKA Frypan)§f cause par effet papillon la mort de
+  milliers de bébés chats à l'autre bout du monde. Vous ne voudriez pas avoir ça sur
+  la conscience quand même. Espèce de monstre!
 - Une §bcoupure d'internet§f peut vous tuer plus vite que vos amis.
-- Des problèmes d'internet? Avez-vous essayé la fibre optique ? Si vous ne pouvez pas l'avoir, notre expert réseau §bFlo§f vous conseille d'utiliser la fibre quand même.
+- Des problèmes d'internet? Avez-vous essayé la fibre optique ? Si vous ne pouvez
+  pas l'avoir, notre expert réseau §bFlo§f vous conseille d'utiliser la fibre quand
+  même.
+
+# ======================================================================================== #
+#                                        SPAWNPOINTS                                       #
+# ======================================================================================== #
+
+spawns:
+  - - -169.0
+    - 23.0
+    - -142.0
+    - -258.2401428222656
+    - 90.0
+  - - -169.0
+    - 23.0
+    - -148.0
+    - -294.83807373046875
+    - 90.0
+  - - -168.0
+    - 23.5
+    - -145.0
+    - 89.75950622558594
+    - 88.94998931884766
+  - - -175.0
+    - 23.5
+    - -152.0
+    - -357.2355041503906
+    - 89.40023040771484
+  - - -178.0
+    - 23.0
+    - -151.0
+    - -28.282867431640625
+    - 90.0
+  - - -181.0
+    - 23.0
+    - -148.0
+    - -61.881744384765625
+    - 90.0
+  - - -182.0
+    - 23.5
+    - -145.0
+    - -92.6290283203125
+    - 90.0
+  - - -181.0
+    - 23.0
+    - -142.0
+    - -118.57440185546875
+    - 90.0
+  - - -178.0
+    - 23.0
+    - -139.0
+    - -161.17803955078125
+    - 90.0
+  - - -175.0
+    - 23.5
+    - -138.0
+    - -180.2303466796875
+    - 90.0
+  - - -172.0
+    - 23.0
+    - -139.0
+    - -194.62921142578125
+    - 90.0
+  - - -172.0
+    - 23.0
+    - -151.0
+    - 30.067705154418945
+    - 90.0
+  
