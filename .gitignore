@@ -27,3 +27,5 @@ usercache.json
 # PLUGIN FILES
 plugins/LoupGarou/stats.csv
 plugins/ProtocolLib/lastupdate
+
+.vscode/settings.json
