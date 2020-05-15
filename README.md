@@ -20,19 +20,31 @@
 - `/lg roles list` to get the complete list of available roles
 - `/lg roles set <role> <amount>` to set the number of players for a given role
 
-## Notes ##
-
-- The following warning is normal and can safely be ignored: `WARNING: Illegal reflective access by com.comphenix.net.sf.cglib.core.ReflectUtils$1 (file:<path>) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)`. It is due to the fact that [ProtocolLib currently does not support Java versions above Java 8 and won't until Mojang and Spigot decide to update.](https://github.com/dmulloy2/ProtocolLib/issues/603#issuecomment-490207994)
-
 ## Additional features compared to original plugin ##
 
-#### 01) Village composition showcase at the end of the game
+As of today (2020/05/11), the original repository version is [v1.1.0](https://github.com/leomelki/LoupGarou/releases/tag/1.1.0), released on 2020/04/07.
+
+My repository includes the **same content** along with the following **additions** (each link contains screenshots):
+
+- [fork v1.2.0](https://github.com/TheOptimisticFactory/LoupGarou/releases/tag/v1.2.0) - Village composition showcase at the end of the game
+- [fork v1.3.0](https://github.com/TheOptimisticFactory/LoupGarou/releases/tag/v1.3.0) - Ability to set nicknames to players + GUI to configure roles and start game
+- [fork v1.4.0](https://github.com/TheOptimisticFactory/LoupGarou/releases/tag/v1.4.0) - Customizable memes messages at the start of the game + Highlight of the % of votes on a given player
+- [fork v1.5.0](https://github.com/TheOptimisticFactory/LoupGarou/releases/tag/v1.5.0) - Revamped scoreboard to avoid useless scoring + Server logs when a player dies or gets resurrected
+- [fork v1.6.0](https://github.com/TheOptimisticFactory/LoupGarou/releases/tag/v1.6.0) - Persisted round results for postgame analytics in CSV format
+- [fork v1.7.0](https://github.com/TheOptimisticFactory/LoupGarou/releases/tag/v1.7.0) - Ability to hide the scoreboard to enable role bluffing
+- [fork v1.8.0](https://github.com/TheOptimisticFactory/LoupGarou/releases/tag/v1.8.0) - Ability to randomize role attribution
+- [fork v1.9.0](https://github.com/TheOptimisticFactory/LoupGarou/releases/tag/v1.9.0) - Revamped command parser + revamped codebase to ease adding new roles
+- [fork v1.10.0](https://github.com/TheOptimisticFactory/LoupGarou/releases/tag/v1.10.0) - Added commands to showcase random distribution
+
+## Additional features gallery ##
+
+#### [fork v1.2.0] Village composition showcase at the end of the game
 
 - https://github.com/leomelki/LoupGarou/pull/42 (Author: [TheOptimisticFactory](https://github.com/TheOptimisticFactory))
 
   ![image](https://user-images.githubusercontent.com/2607260/79672340-4260a780-81d1-11ea-9b49-266a992e872a.png)
 
-#### 02) Ability to set nickanmes to players
+#### [fork v1.3.0] Ability to set nickanmes to players
 
 - https://github.com/leomelki/LoupGarou/pull/40 (Author: [Nicooow](https://github.com/Nicooow)).
 - Tweaked the PR with an [additional commit (9cbb739)](https://github.com/TheOptimisticFactory/LoupGarou/commit/9cbb73935532cacab8787cc4586a64e42b65958e) to:
@@ -43,7 +55,7 @@
 
   ![javaw_Nk1NdY7KXw](https://user-images.githubusercontent.com/2607260/79673723-8e651980-81dc-11ea-8258-eb077bca7fca.png)
 
-#### 03) GUI to configure roles and start game
+#### [fork v1.3.0] GUI to configure roles and start game
 
 - https://github.com/leomelki/LoupGarou/pull/19 (Author: [Commantary](https://github.com/Commantary)).
 - Tweaked the PR with an [additional commit (7df0439)](https://github.com/TheOptimisticFactory/LoupGarou/commit/7df04392ecb443d42207b859fcbbf4188e8080ae) to:
@@ -51,19 +63,19 @@
 
   ![image](https://user-images.githubusercontent.com/2607260/80097236-41ca6700-856b-11ea-978c-dd658ad09c67.png)
 
-#### 04) Highlight of the % of votes on a given player
+#### [fork v1.4.0] Highlight of the % of votes on a given player
 
 - https://github.com/leomelki/LoupGarou/pull/43 (Author: [TheOptimisticFactory](https://github.com/TheOptimisticFactory))
 
   ![image](https://user-images.githubusercontent.com/2607260/79676799-f706c300-81e9-11ea-86cd-0c9cd98be0b3.png)
 
-#### 05) Server logs when a player dies or gets resurrected
+#### [fork v1.5.0] Server logs when a player dies or gets resurrected
 
 - https://github.com/leomelki/LoupGarou/pull/47 (Author: [TheOptimisticFactory](https://github.com/TheOptimisticFactory))
 
   ![image](https://user-images.githubusercontent.com/2607260/80264401-56564e80-8694-11ea-9f28-89a425b4d59b.png)
 
-#### 06) Revamped scoreboard to avoid useless scoring
+#### [fork v1.5.0] Revamped scoreboard to avoid useless scoring
 
 - Needs testing before the PR gets created. (Author: [TheOptimisticFactory](https://github.com/TheOptimisticFactory))
   + Added highlight of the total number of players remaining.
@@ -72,10 +84,16 @@
 
   ![javaw_3n08F7Wy4V](https://user-images.githubusercontent.com/2607260/80318956-faafd080-880d-11ea-8a82-5d7a63f66330.png)
 
-#### 07) Persisted round results for postgame analytics
+#### [fork v1.6.0] Persisted round results for postgame analytics
 
 - Needs testing before the PR gets created. (Author: [TheOptimisticFactory](https://github.com/TheOptimisticFactory))
 - Village composition and victory type is saved in `stats.csv` to enable postgame analytics
 
   ![Code_FCvEXfwuZR](https://user-images.githubusercontent.com/2607260/80318997-54b09600-880e-11ea-9256-a29da3f42175.png)
 
+#### [fork v1.8.0] Ability to randomize role attribution
+
+- Needs testing before the PR gets created. (Author: [TheOptimisticFactory](https://github.com/TheOptimisticFactory))
+- The roles can now be randomly distributed using a weighting system to set the likelihood of each individual role. The higher the weight, the more likely it will be picked compared to others. See [release v1.8.0](https://github.com/TheOptimisticFactory/LoupGarou/releases/tag/v1.8.0) for how it works
+
+  ![image](https://user-images.githubusercontent.com/2607260/82044533-cc573f80-96ad-11ea-8511-04de99d4fd75.png)
