@@ -14,11 +14,18 @@
 - `/lg joinAll` to make everyone connected join the lobby
 - `/lg start` to start the game
 - `/lg end` to interrupt an ongoing game
-- `/lg nick <username> <nickname>` to set a nickname to a player
 - `/lg addSpawn` to add a spawn-point on your EXACT position and look direction
 - `/lg roles` to get the list of currently active roles
 - `/lg roles list` to get the complete list of available roles
 - `/lg roles set <role> <amount>` to set the number of players for a given role
+
+##### Additonal commands compared to baseline repository:
+
+- `/lg nick <username> <nickname>` to set a nickname to a player
+- `/lg unnick <username>` to remove a nickname from a player
+- `/lg random` to list the probability to picking each role with a weight > 0
+- `/lg random showAll` to list the probability to picking each role (disregarding their weigth)
+- `/lg random players <amount>` to set the number of players when using random role distribution
 
 ## Additional features compared to original plugin ##
 
