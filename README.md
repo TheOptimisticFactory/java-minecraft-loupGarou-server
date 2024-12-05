@@ -2,12 +2,25 @@
 
 - This server is bundled with my public fork https://github.com/TheOptimisticFactory/LoupGarou/tree/dev which is based on the original repository https://github.com/leomelki/LoupGarou by `Leomelki` and `Shytoos`
 
-- Placements provided in this repository are preconfigured for 12 participants using [this map](https://github.com/leomelki/LoupGarou/blob/master/maps/lg_village.zip). You should download the zip file and unzip it under `/world`
+## How to run the project ##
+
+- Step n°01: Have Java installed
+- Step n°02: Run the script `start.sh` in the terminal of your choice
+
+- If you do not trust running this script directly just execute the following command in the main folder of this project: `java -DIReallyKnowWhatIAmDoingISwear -Xmx1024M -Xms1024M -jar spigot-1.15.2.jar nogui nogui`
+
+## Configuration Tips ##
+
+- Placements provided in this repository are pre-configured for 12 participants using [this map](https://github.com/leomelki/LoupGarou/blob/master/maps/lg_village.zip). You should download the zip file and unzip it under `/world`
 
 - The file `plugins/LoupGarou/config.yml` contains several important entries:
 	+ `role` is the role distribution. It must match the number of players in your lobby before the game can start.
 	+ `spawns` is the list of available spawn-points.
 	+ `startingMemes` is the list of random sentences that will be picked at the begining of each game. You can customize them and/or add or remove entries to your liking.
+
+- The file `ops.json` is where you can configure which users will get admin permissions on your server
+
+- The file `server.properties` is where you can configure every aspect of the minecraft server, such as max players, motd, etc.
 
 ## Useful commands (for ops) ##
 
@@ -19,7 +32,7 @@
 - `/lg roles list` to get the complete list of available roles
 - `/lg roles set <role> <amount>` to set the number of players for a given role
 
-##### Additonal commands compared to baseline repository:
+##### Additional commands compared to baseline repository:
 
 - `/lg nick <username> <nickname>` to set a nickname to a player
 - `/lg unnick <username>` to remove a nickname from a player
@@ -51,7 +64,7 @@ My repository includes the **same content** along with the following **additions
 
   ![image](https://user-images.githubusercontent.com/2607260/79672340-4260a780-81d1-11ea-9b49-266a992e872a.png)
 
-#### [fork v1.3.0] Ability to set nickanmes to players
+#### [fork v1.3.0] Ability to set nicknames to players
 
 - https://github.com/leomelki/LoupGarou/pull/40 (Author: [Nicooow](https://github.com/Nicooow)).
 - Tweaked the PR with an [additional commit (9cbb739)](https://github.com/TheOptimisticFactory/LoupGarou/commit/9cbb73935532cacab8787cc4586a64e42b65958e) to:

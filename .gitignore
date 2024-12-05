@@ -28,4 +28,6 @@ usercache.json
 plugins/LoupGarou/stats.csv
 plugins/ProtocolLib/lastupdate
 
+# IDE
+.history
 .vscode/settings.json
